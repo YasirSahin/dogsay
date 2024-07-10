@@ -1,5 +1,12 @@
-text = input()
+import sys
+
+if len(sys.argv) > 1:
+    text = ' '.join(sys.argv[1:])
+else:
+   text = input()
+
 lenText = len(text)
+
 print(f"""
  ___{lenText*"_"}     
 < {text} >
